@@ -1,3 +1,5 @@
+import type { PluginListenerHandle } from '@capacitor/core';
+
 export enum ErrorCodeReference {
   PUSH_PROVISION_ERROR = -1,
   PUSH_PROVISION_CANCEL = -2,
@@ -155,7 +157,7 @@ export interface GooglePayPlugin {
    *
    * @since 1.0.0
    */
-  addListener(eventName: 'registerDataChangedListener', listenerFunc: (response: any) => void): any;
+  addListener(eventName: 'registerDataChangedListener', listenerFunc: (response: any) => void): PluginListenerHandle;
 
   removeAllListeners(): void;
 

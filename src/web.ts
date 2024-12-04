@@ -3,6 +3,9 @@ import { WebPlugin } from '@capacitor/core';
 import type { GooglePayPlugin } from './definitions';
 
 export class GooglePayWeb extends WebPlugin implements GooglePayPlugin {
+  addListener(): any {
+    throw this.unimplemented('Not implemented on web.');
+  }
 
   getEnvironment(): Promise<any> {
     throw this.unimplemented('Not implemented on web.');
