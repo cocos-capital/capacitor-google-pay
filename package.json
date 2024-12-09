@@ -71,5 +71,8 @@
       "src": "android"
     }
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "husky": "^9.1.7"
+  }
 }
